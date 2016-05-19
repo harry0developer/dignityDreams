@@ -1,0 +1,11 @@
+<ion-view view-title="News feed">
+  <ion-content>
+    <div class="card" ng-repeat="playlist in playlists" >
+	    <a class="item item-avatar" href="#/app/playlists/{{playlist.id}}">
+	      <img src="img/{{playlist.img}}">
+	      <h2>{{playlist.title}}</h2>
+	      <p>{{playlist.content}}</p>
+	    </a>
+	</div>
+  </ion-content>
+</ion-view>
